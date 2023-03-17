@@ -2,6 +2,16 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .header_location {
+        display: flex;
+        gap: 17px;
+
+        & i{
+            width: 12px;
+            height: 16px;
+        }
+    }
 }
 
 header img {
