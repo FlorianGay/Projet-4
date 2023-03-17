@@ -1,0 +1,11 @@
+{
+  "name": "site-du-projet-4",
+  "version": "1.0.0",
+  "description": "Projet N°4 : Améliorez l'interface d'un site mobile avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "Florian Gay",
+  "license": "ISC"
+}
