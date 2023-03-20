@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #353535;
+    color: white;
+    padding: 22px 22px 33px 25px;
+
+    a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        gap: 11px;
+        padding: 3.5px 0;
+    }
+}
