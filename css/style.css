@@ -21,6 +21,11 @@ body {
   font-size: 24px;
   line-height: 28.13px;
 }
+@media screen and (min-width: 1024px) {
+  .title h2 {
+    font-size: 40px;
+  }
+}
 .title h3 {
   font-weight: 300;
   font-size: 18px;
@@ -147,7 +152,6 @@ a:hover {
   .fonction ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 36px;
   }
 }
@@ -229,8 +233,6 @@ i {
   margin: 0;
 }
 .container_card i {
-  width: 21.68px;
-  height: 21px;
   color: black;
 }
 

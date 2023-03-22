@@ -26,7 +26,6 @@ a {
             @include desktop-only {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
                 gap: 36px;
             }
 
@@ -117,8 +116,6 @@ i {
     }
 
     i {
-        width: 21.68px;
-        height: 21px;
         color: black;
     }
 }
