@@ -8,11 +8,12 @@ body {
 
 header {
     align-items: center;
+    background: $Grey2;
 
     .header_location {
         display: flex;
         gap: 17px;
-        background: $Grey2;
+        
         padding: 16px 0 15px 0;
         width: 100%;
         justify-content: center;
@@ -20,6 +21,7 @@ header {
         & i{
             width: 12px;
             height: 16px;
+            color: black;
         }
     }
 }
@@ -28,7 +30,8 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
-    box-shadow: 0px 2px 2px rgba(255, 0, 0, 0.15);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    background: white;
 
     & img{
     width: 197px;
