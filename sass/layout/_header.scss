@@ -4,7 +4,6 @@
 
 header {
     align-items: center;
-    background: $Grey2;
 
     .header_location {
         display: flex;
@@ -33,5 +32,29 @@ header {
     width: 197px;
     height: 36px;
     margin: 14px 0 13px 0;
+    }
+}
+
+/* en-tête pages restaurant*/
+
+.head {
+    display: flex;
+    align-items: center;
+
+    .__btn {
+        $Grey: black;
+        width: 17.2px;
+        height: 16px;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        & img {
+            width: 197px;
+            height: 36px;
+            margin: 14px 0 13px 0;
+        }
     }
 }

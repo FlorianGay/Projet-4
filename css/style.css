@@ -69,10 +69,15 @@ footer h1 {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
+header .__btn {
+  border: none;
+  background: white;
+  height: 100%;
+}
+
 /*En-tête*/
 header {
   align-items: center;
-  background: #EAEAEA;
 }
 header .header_location {
   display: flex;

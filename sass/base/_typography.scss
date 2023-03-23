@@ -69,3 +69,43 @@ footer {
     }
 
 }
+
+//Restaurant//
+
+.menu_food {
+    h1 {
+        font-weight: 400;
+        font-size: 28px;
+        font-style: italic;
+        margin: 0;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 16px;
+        margin: 0;
+        text-decoration: underline 3px;
+        text-decoration-color: $tertiary;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 18px;
+        text-overflow: ellipsis;
+        margin: 0;
+    }
+
+    p {
+        text-overflow: ellipsis;
+        font-weight: 300;
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+.price {
+    p {
+        font-weight: 700;
+        font-size: 15px;
+    }
+}

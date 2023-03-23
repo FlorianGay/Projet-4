@@ -1,3 +1,242 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+h1 {
+  font-family: "Shrikhand", cursive;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header_location {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+@media screen and (min-width: 1024px) {
+  .title h2 {
+    font-size: 40px;
+  }
+}
+.title h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #353535;
+}
+.title .button {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.menu li {
+  font-weight: 500;
+  font-size: 16px;
+}
+.menu span {
+  font-size: 14px;
+}
+
+.container_card h2 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.container_card h3 {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+footer h1 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.menu_food h1 {
+  font-weight: 400;
+  font-size: 28px;
+  font-style: italic;
+  margin: 0;
+}
+.menu_food h3 {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  text-decoration: underline 3px;
+  text-decoration-color: #99E2D0;
+}
+.menu_food h2 {
+  font-weight: 500;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.menu_food p {
+  text-overflow: ellipsis;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0;
+}
+
+.price p {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.button {
+  color: white;
+  padding: 13px 18.75px;
+  border-radius: 25px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
+header .__btn {
+  border: none;
+  background: white;
+  height: 100%;
+}
+
+/*En-tête*/
+header {
+  align-items: center;
+}
+header .header_location {
+  display: flex;
+  gap: 17px;
+  padding: 16px 0 15px 0;
+  width: 100%;
+  justify-content: center;
+}
+header .header_location i {
+  width: 12px;
+  height: 16px;
+  color: black;
+}
+
+.header_logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+.header_logo img {
+  width: 197px;
+  height: 36px;
+  margin: 14px 0 13px 0;
+}
+
+/* en-tête pages restaurant*/
+.head {
+  display: flex;
+  align-items: center;
+}
+.head .__btn {
+  width: 17.2px;
+  height: 16px;
+}
+.head .logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.head .logo img {
+  width: 197px;
+  height: 36px;
+  margin: 14px 0 13px 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #353535;
+  color: white;
+  padding: 22px 22px 33px 25px;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 71px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .footer__nav {
+    display: flex;
+    gap: 40px;
+  }
+}
+footer a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  gap: 11px;
+  padding: 3.5px 0;
+}
+footer h1 {
+  margin: 0;
+}
+footer i {
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 275px;
+}
+
+.menu_food {
+  padding: 32px 17px;
+  background: #F7F7F7;
+  border-radius: 50px 50px 0 0;
+}
+.menu_food .fa-heart {
+  width: 22px;
+  height: 21px;
+  margin-left: 20px;
+}
+
+.menu_card {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu_card .card {
+  background: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 12px 10.5px;
+  display: flex;
+}
+.menu_card .card .container__card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_card .card i {
+  display: none;
+}
 
 /*# sourceMappingURL=resto.css.map */
