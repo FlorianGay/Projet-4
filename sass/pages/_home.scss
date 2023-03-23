@@ -1,3 +1,9 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 /*title et button*/
 a {
     text-decoration: none;
@@ -17,6 +23,10 @@ a {
 .fonction {
     padding: 48px 20px 68px 20px;
 
+    @include desktop-only{
+        margin-left: 193px;
+    }
+
         ul {
             display: flex;
             flex-direction: column;
@@ -32,7 +42,7 @@ a {
             li {
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
                 border-radius: 20px;
-                padding: 20px 0px;
+                padding: 20px 38px 20px 0;
                 background: #f6f6f6;
 
                 a {
@@ -75,25 +85,16 @@ i {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         gap: 20px;
+        position: relative;
 
         @include desktop-only {
             display: flex;
             flex-direction: row;
         }
     }
-    
-    .new {
-        background: $tertiary;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 2px;
-        color: #008766;
-        padding: 7px 9.63px 6px 9px;
-
-    }
 }
 
 .card {
-    block-size: 100%;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 
