@@ -81,22 +81,46 @@ i {
     padding: 54px 17px 64px 17px;
     background: #f2f2f2;
 
+    @include desktop-only {
+        padding-left: 194px;
+        width: 100%;
+    }
+
     .__card {
         display: grid;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(1fr);
         gap: 20px;
-        position: relative;
 
         @include desktop-only {
             display: flex;
             flex-direction: row;
         }
+
+        a {
+            @include desktop-only {
+                flex: 1;
+            }
+        }
+
+        .new {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            padding: 7px 9px;
+            color: #008766;
+            background: $tertiary;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        
     }
 }
 
 .card {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    block-size: 100%;
+    position: relative;
 
     img {
         width: 100%;
@@ -115,8 +139,39 @@ i {
     h2, h3 {
         margin: 0;
     }
+}
 
-    i {
-        color: black;
+.fa-heart {
+    color: black;
+
+    &:hover::before {
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+        animation: filled-heart ease-in-out 3000ms;
     }
 }
+
+@keyframes filled-heart {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+  
+
