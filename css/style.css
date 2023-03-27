@@ -35,6 +35,10 @@ body {
   font-size: 16px;
 }
 
+.fonction h2 {
+  text-align: center;
+}
+
 .menu li {
   font-weight: 500;
   font-size: 16px;
@@ -63,12 +67,18 @@ footer h1 {
   font-style: italic;
   margin: 0;
 }
+@media screen and (min-width: 1024px) {
+  .menu_food h1 {
+    text-align: center;
+  }
+}
 .menu_food h3 {
+  width: 10%;
   font-weight: 300;
   font-size: 16px;
+  line-height: 20px;
   margin: 0;
-  text-decoration: underline 3px;
-  text-decoration-color: #99E2D0;
+  border-bottom: 3px solid #99E2D0;
 }
 .menu_food h2 {
   font-weight: 500;
@@ -99,11 +109,25 @@ footer h1 {
 .button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
+.button.resto_btn {
+  align-self: center;
+  width: 55%;
+}
+@media screen and (min-width: 1024px) {
+  .button.resto_btn {
+    width: 30%;
+  }
+}
 
 header .__btn {
   border: none;
   background: white;
   height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  header .__btn {
+    margin-left: 75px;
+  }
 }
 
 /*En-tête*/
@@ -163,6 +187,13 @@ footer {
   color: white;
   padding: 22px 22px 33px 25px;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
 @media screen and (min-width: 1024px) {
   footer {
     display: flex;
@@ -170,6 +201,12 @@ footer {
     justify-content: center;
     padding: 50px 0;
     gap: 71px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footer__nav {
+    display: flex;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -187,6 +224,7 @@ footer a {
 }
 footer h1 {
   margin: 0;
+  margin-bottom: 16px;
 }
 footer i {
   color: white;
@@ -228,6 +266,11 @@ a:hover {
   gap: 25px;
   padding: 0;
   list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  .fonction ul {
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1024px) {
   .fonction ul {
@@ -283,6 +326,12 @@ i {
   display: grid;
   grid-template-rows: repeat(1fr);
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant .__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (min-width: 1024px) {
   .restaurant .__card {
