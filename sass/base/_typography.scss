@@ -78,14 +78,19 @@ footer {
         font-size: 28px;
         font-style: italic;
         margin: 0;
+
+        @include desktop-only {
+            text-align: center;
+        }
     }
 
     h3 {
+        width: 10%;
         font-weight: 300;
         font-size: 16px;
+        line-height: 20px;
         margin: 0;
-        text-decoration: underline 3px;
-        text-decoration-color: $tertiary;
+        border-bottom: 3px solid $tertiary;
     }
 
     h2 {

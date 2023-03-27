@@ -9,6 +9,15 @@
         &:hover {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);;
         }
+
+        &.resto_btn {
+            align-self: center;
+            width: 55%;
+            
+            @include desktop-only {
+                width: 30%;
+            }
+        }
     }
 
 header {
@@ -16,5 +25,10 @@ header {
         border: none;
         background: white;
         height: 100%;
+
+        @include desktop-only {
+            margin-left: 75px;
+        }
     }
 }
+
