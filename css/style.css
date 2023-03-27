@@ -378,17 +378,20 @@ i {
   margin: 0;
 }
 
-.fa-heart {
+.heart-icon i:nth-child(1) {
   color: black;
 }
-.fa-heart:hover::before {
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  animation: filled-heart ease-in-out 3000ms;
+.heart-icon i:nth-child(2) {
+  position: relative;
+  opacity: 0;
+  color: #008766;
+  animation: filled-heart-out 1000ms ease-in-out forwards;
+}
+.heart-icon i:nth-child(2):hover {
+  animation: filled-heart-in 1000ms ease-in-out forwards;
 }
 
-@keyframes filled-heart {
+@keyframes filled-heart-in {
   0% {
     opacity: 0;
   }
@@ -403,6 +406,23 @@ i {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes filled-heart-out {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
