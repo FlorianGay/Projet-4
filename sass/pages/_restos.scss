@@ -41,6 +41,7 @@ main img {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    
 
     .card {
         background: white;
@@ -55,6 +56,7 @@ main img {
             .check {
             display: flex;
             padding: 25px 20px 24px 19px;
+            height: 100%;
             background: $tertiary;
             border-radius: 0 15px 15px 0;
             justify-content: center;
@@ -81,6 +83,15 @@ main img {
             display: flex;
             justify-content: space-between;
         }
+    }
+
+    .plate {
+        align-self: center;
+        width: 87%;
+    }
+
+    .price {
+        align-self: flex-end;
     }
 }
 

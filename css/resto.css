@@ -73,7 +73,7 @@ footer h1 {
   }
 }
 .menu_food h3 {
-  width: 10%;
+  width: 40px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -287,6 +287,7 @@ main img {
 .menu_card .card:hover .check {
   display: flex;
   padding: 25px 20px 24px 19px;
+  height: 100%;
   background: #99E2D0;
   border-radius: 0 15px 15px 0;
   justify-content: center;
@@ -308,6 +309,13 @@ main img {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.menu_card .plate {
+  align-self: center;
+  width: 87%;
+}
+.menu_card .price {
+  align-self: flex-end;
 }
 
 @keyframes validation {
