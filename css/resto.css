@@ -281,13 +281,42 @@ main img {
   padding: 12px 10.5px;
   display: flex;
 }
+.menu_card .card:hover {
+  cursor: pointer;
+}
+.menu_card .card:hover .check {
+  display: flex;
+  padding: 25px 20px 24px 19px;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  justify-content: center;
+  align-items: center;
+  animation: validation 1000ms ease-in-out forwards;
+}
+.menu_card .card:hover .check i {
+  opacity: 1;
+  color: #99E2D0;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: white;
+  padding: 2px;
+}
+.menu_card .card i {
+  opacity: 0;
+}
 .menu_card .card .container__card {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.menu_card .card i {
-  display: none;
+
+@keyframes validation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 5%;
+  }
 }
 
 /*# sourceMappingURL=resto.css.map */
