@@ -8,13 +8,14 @@ body {
 .body_contain {
     opacity: 0;
     animation: body_appear 0ms forwards;
-    animation-delay: 5500ms
+    animation-delay: 5000ms
 }
 
 .loader {
+
   display: flex;
   gap: 25px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 25%;
   opacity: 1;
@@ -147,6 +148,11 @@ a {
                 position: relative;
                 left: -12px;
                 padding: 5px 8px 4px 8px;
+
+                &:hover {
+                    background: $primary;
+                    color: white;
+                }
             }
 
             :hover {
