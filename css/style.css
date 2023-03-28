@@ -237,6 +237,78 @@ body {
 }
 
 /* Animation loader */
+.body_contain {
+  opacity: 0;
+  animation: body_appear 0ms forwards;
+  animation-delay: 5500ms;
+}
+
+.loader {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  opacity: 1;
+  animation: loader_disapear 500ms forwards;
+  animation-delay: 5000ms;
+}
+@media screen and (min-width: 1024px) {
+  .loader {
+    left: 50%;
+  }
+}
+.loader svg {
+  width: 50px;
+  height: auto;
+  animation: loader 1000ms ease-in 5 alternate;
+}
+
+.loader svg:nth-child(1) {
+  animation-delay: -240ms;
+}
+
+.loader svg:nth-child(2) {
+  animation-delay: -120ms;
+}
+
+.loader svg:nth-child(3) {
+  animation-delay: 0;
+}
+
+@keyframes loader {
+  0% {
+    height: 128px;
+  }
+  50% {
+    height: 64px;
+  }
+  100% {
+    height: 64px;
+  }
+}
+@keyframes loader_disapear {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes body_appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*title et button*/
 a {
   text-decoration: none;
