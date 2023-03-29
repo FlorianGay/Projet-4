@@ -73,7 +73,7 @@ footer h1 {
   }
 }
 .menu_food h3 {
-  width: 10%;
+  width: 40px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -123,7 +123,6 @@ footer h1 {
 header .__btn {
   border: none;
   background: white;
-  height: 100%;
 }
 @media screen and (min-width: 1024px) {
   header .__btn {
@@ -455,16 +454,21 @@ i {
   margin: 0;
 }
 
-.heart-icon i:nth-child(1) {
+.heart-icon .fa-regular {
   color: black;
 }
-.heart-icon i:nth-child(2) {
+.heart-icon .fa-solid {
   position: relative;
   opacity: 0;
-  color: #008766;
   animation: filled-heart-out 1000ms ease-in-out forwards;
 }
-.heart-icon i:nth-child(2):hover {
+.heart-icon .fa-solid::before {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+.heart-icon .fa-solid:hover {
   animation: filled-heart-in 1000ms ease-in-out forwards;
 }
 
