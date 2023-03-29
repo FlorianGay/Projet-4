@@ -35,8 +35,15 @@ body {
   font-size: 16px;
 }
 
-.fonction h2 {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .fonction h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .fonction h2 {
+    text-align: start;
+  }
 }
 
 .menu li {
@@ -83,14 +90,14 @@ footer h1 {
 .menu_food h2 {
   font-weight: 500;
   font-size: 18px;
-  text-overflow: ellipsis;
   margin: 0;
+  max-width: 80%;
 }
 .menu_food p {
-  text-overflow: ellipsis;
   font-weight: 300;
   font-size: 15px;
   margin: 0;
+  max-width: 80%;
 }
 
 .price p {
