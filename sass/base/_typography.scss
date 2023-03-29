@@ -117,6 +117,7 @@ footer {
         font-size: 15px;
         margin: 0;
         max-width: 80%;
+        
     }
 }
 
@@ -126,4 +127,13 @@ footer {
         font-weight: 700;
         font-size: 15px;
     }
+}
+
+.plate {
+    h2, p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
 }

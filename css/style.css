@@ -105,6 +105,12 @@ footer h1 {
   font-size: 15px;
 }
 
+.plate h2, .plate p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .button {
   color: white;
   padding: 13px 18.75px;
@@ -206,8 +212,8 @@ footer {
   footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    padding: 50px 0;
+    justify-content: flex-start;
+    padding: 50px 50px;
     gap: 71px;
   }
 }
@@ -337,7 +343,7 @@ a:hover {
 }
 @media screen and (min-width: 1024px) {
   .fonction {
-    margin-left: 193px;
+    padding: 50px 0 50px 180px;
   }
 }
 .fonction ul {
@@ -368,6 +374,7 @@ a:hover {
 .fonction ul li a {
   display: flex;
   gap: 25px;
+  align-items: center;
 }
 .fonction ul span {
   border: 1px solid;
@@ -402,8 +409,7 @@ i {
 }
 @media screen and (min-width: 1024px) {
   .restaurant {
-    padding-left: 194px;
-    width: 100%;
+    padding: 30px 180px;
   }
 }
 .restaurant .__card {
@@ -419,8 +425,7 @@ i {
 }
 @media screen and (min-width: 1024px) {
   .restaurant .__card {
-    display: flex;
-    flex-direction: row;
+    gap: 50px 100px;
   }
 }
 @media screen and (min-width: 1024px) {

@@ -105,6 +105,12 @@ footer h1 {
   font-size: 15px;
 }
 
+.plate h2, .plate p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .button {
   color: white;
   padding: 13px 18.75px;
@@ -144,6 +150,7 @@ header {
 header .header_location {
   display: flex;
   gap: 17px;
+  background: #EAEAEA;
   padding: 16px 0 15px 0;
   width: 100%;
   justify-content: center;
@@ -205,8 +212,8 @@ footer {
   footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    padding: 50px 0;
+    justify-content: flex-start;
+    padding: 50px 50px;
     gap: 71px;
   }
 }
@@ -275,7 +282,6 @@ a {
 }
 @media screen and (min-width: 768px) {
   .menu_food {
-    margin: 0 20px;
     align-items: center;
   }
 }
@@ -294,10 +300,10 @@ a {
   opacity: 0;
   animation: appear 3000ms ease forwards;
 }
-.menu_card:nth-child(2) {
+.menu_card:nth-child(3) {
   animation-delay: 2000ms;
 }
-.menu_card:nth-child(3) {
+.menu_card:nth-child(4) {
   animation-delay: 4000ms;
 }
 .menu_card .card {
@@ -339,9 +345,8 @@ a {
 .menu_card .plate {
   align-self: center;
   flex: 1;
-  height: 44px;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  /* text-overflow: ellipsis;
+   overflow: hidden;*/
 }
 .menu_card .price {
   align-self: flex-end;
