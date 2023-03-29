@@ -33,6 +33,11 @@ a {
         margin: 0 192px;
         padding: 30px 210px;
     }
+
+    @include tablet-only {
+      margin: 0 20px;
+      align-items: center;
+    }
     
     .fa-heart {
         width: 22px;
@@ -69,7 +74,7 @@ a {
     
             .check {
             display: flex;
-            padding: 25px 20px 19px 19px;
+            padding: 25px 20px 19.5px 19px;
             height: 100%;
             background: $tertiary;
             border-radius: 0 15px 15px 0;
