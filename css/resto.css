@@ -83,14 +83,14 @@ footer h1 {
 .menu_food h2 {
   font-weight: 500;
   font-size: 18px;
-  text-overflow: ellipsis;
   margin: 0;
+  max-width: 80%;
 }
 .menu_food p {
-  text-overflow: ellipsis;
   font-weight: 300;
   font-size: 15px;
   margin: 0;
+  max-width: 80%;
 }
 
 .price p {
@@ -277,12 +277,20 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 0%;
+  opacity: 0;
+  animation: appear 3000ms ease forwards;
+}
+.menu_card:nth-child(2) {
+  animation-delay: 2000ms;
+}
+.menu_card:nth-child(3) {
+  animation-delay: 4000ms;
 }
 .menu_card .card {
   background: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding: 12px 10.5px;
   display: flex;
 }
 .menu_card .card:hover {
@@ -290,7 +298,7 @@ a {
 }
 .menu_card .card:hover .check {
   display: flex;
-  padding: 25px 20px 24px 19px;
+  padding: 25px 20px 19px 19px;
   height: 100%;
   background: #99E2D0;
   border-radius: 0 15px 15px 0;
@@ -313,10 +321,14 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 12.03px 10.53px;
 }
 .menu_card .plate {
   align-self: center;
-  width: 87%;
+  flex: 1;
+  height: 44px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_card .price {
   align-self: flex-end;
@@ -324,10 +336,19 @@ a {
 
 @keyframes validation {
   from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes appear {
+  from {
     width: 0%;
   }
   to {
-    width: 5%;
+    width: 100%;
+    opacity: 1;
   }
 }
 
