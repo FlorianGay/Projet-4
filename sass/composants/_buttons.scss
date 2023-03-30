@@ -26,6 +26,10 @@ header {
         border: none;
         background: white;
 
+        &:hover {
+            cursor: pointer;
+        }
+
         @include desktop-only {
             margin-left: 75px;
         }
