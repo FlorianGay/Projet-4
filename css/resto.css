@@ -35,6 +35,9 @@ body {
   font-size: 16px;
 }
 
+.fonction h2 {
+  margin: 0;
+}
 @media screen and (min-width: 768px) {
   .fonction h2 {
     text-align: center;
@@ -91,13 +94,11 @@ footer h1 {
   font-weight: 500;
   font-size: 18px;
   margin: 0;
-  max-width: 80%;
 }
 .menu_food p {
   font-weight: 300;
   font-size: 15px;
   margin: 0;
-  max-width: 80%;
 }
 
 .price p {
@@ -333,20 +334,11 @@ a {
 .menu_card .card:hover .check i {
   transform: rotate(360deg);
 }
-.menu_card .card:hover .price {
-  left: -10px;
-}
-.menu_card .card .price {
-  position: relative;
-  left: 45px;
-  transition: all 500ms;
-}
 .menu_card .card .check {
   right: -70px;
   display: flex;
   position: relative;
   padding: 25px 20px 16px 19px;
-  height: 100%;
   background: #99E2D0;
   border-radius: 0 15px 15px 0;
   justify-content: center;
@@ -367,13 +359,16 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 12.03px 10.53px;
+  align-items: flex-end;
 }
 .menu_card .plate {
-  align-self: center;
   flex: 1;
+  max-width: 80%;
 }
 .menu_card .price {
-  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 @keyframes appear {

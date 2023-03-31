@@ -35,6 +35,9 @@ body {
   font-size: 16px;
 }
 
+.fonction h2 {
+  margin: 0;
+}
 @media screen and (min-width: 768px) {
   .fonction h2 {
     text-align: center;
@@ -136,6 +139,9 @@ footer h1 {
 header .__btn {
   border: none;
   background: white;
+}
+header .__btn:hover {
+  cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
   header .__btn {
@@ -476,7 +482,7 @@ i {
 .heart-icon .fa-solid {
   position: relative;
   opacity: 0;
-  animation: filled-heart-out 1000ms ease-in-out forwards;
+  animation: filled-heart-out 500ms ease-in-out forwards;
 }
 .heart-icon .fa-solid::before {
   -webkit-text-fill-color: transparent;
@@ -485,7 +491,7 @@ i {
   background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 .heart-icon .fa-solid:hover {
-  animation: filled-heart-in 1000ms ease-in-out forwards;
+  animation: filled-heart-in 500ms ease-in-out forwards;
   cursor: pointer;
 }
 

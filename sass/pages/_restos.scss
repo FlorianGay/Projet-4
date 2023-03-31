@@ -91,17 +91,7 @@ a {
               i {
                 transform: rotate(360deg);
               }
-              }
-      
-              .price {
-                left: -10px;
               }        
-          }
-
-          .price {
-            position: relative;
-            left: 45px;
-            transition: all 500ms;
           }
           
           .check {
@@ -109,7 +99,6 @@ a {
             display: flex;
             position: relative;
             padding: 25px 20px 16px 19px;
-            height: 100%;
             background: $tertiary;
             border-radius: 0 15px 15px 0;
             justify-content: center;
@@ -132,17 +121,19 @@ a {
             display: flex;
             justify-content: space-between;
             padding: 12.03px 10.53px;
+            align-items: flex-end;
         }
     }
 
     .plate {
-        align-self: center;
         flex: 1;
-       
+        max-width: 80%;
     }
 
     .price {
-        align-self: flex-end;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
     }
 }
 

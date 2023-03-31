@@ -251,7 +251,7 @@ i {
     .fa-solid {
     position: relative;
     opacity: 0;
-    animation: filled-heart-out 1000ms ease-in-out forwards;
+    animation: filled-heart-out 500ms ease-in-out forwards;
     &::before{
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -260,7 +260,7 @@ i {
     }
      
     &:hover {
-        animation: filled-heart-in 1000ms ease-in-out forwards;
+        animation: filled-heart-in 500ms ease-in-out forwards;
         cursor: pointer;
     }
 }

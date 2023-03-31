@@ -42,6 +42,8 @@ body {
 //fonctionement//
 
 .fonction h2 {
+    margin: 0;
+
     @include tablet-only {
         text-align: center;
     }
@@ -109,14 +111,12 @@ footer {
         font-weight: 500;
         font-size: 18px;
         margin: 0;
-        max-width: 80%;
     }
 
     p {
         font-weight: 300;
         font-size: 15px;
         margin: 0;
-        max-width: 80%;
         
     }
 }
