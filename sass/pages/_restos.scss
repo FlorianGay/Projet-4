@@ -85,20 +85,20 @@ a {
             cursor: pointer;
     
             .check {
-              right: 0;
+              width: 15%;
               transform: scaleX(1);
       
               i {
                 transform: rotate(360deg);
+                margin-left: 0;
               }
               }        
           }
           
           .check {
-            right: -70px;
+            width: 0;
             display: flex;
-            position: relative;
-            padding: 25px 20px 16px 19px;
+            padding: 0;
             background: $tertiary;
             border-radius: 0 15px 15px 0;
             justify-content: center;
@@ -106,7 +106,7 @@ a {
             transition: all 500ms;
     
             i {
-              opacity: 1;
+              margin-left: 20px;
               color: $tertiary;
               border: 2px solid white;
               border-radius: 50%;
