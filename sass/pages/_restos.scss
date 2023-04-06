@@ -44,6 +44,7 @@ a {
         margin-left: 20px;
 
         &:hover {
+          cursor: pointer;
           &::before {
           font-weight: bold;
           -webkit-text-fill-color: transparent;
@@ -63,7 +64,7 @@ a {
     width: 0;
     opacity: 0;
     animation: appear 3000ms ease forwards;
-
+    // decalage d'apparition des differentes parties
     &:nth-child(3) {
         animation-delay: 2000ms;
       }
@@ -92,7 +93,7 @@ a {
               }
               }        
           }
-          // bloc check des plats
+          // bloc de l'option check
           .check {
             width: 0;
             display: flex;
@@ -142,7 +143,6 @@ a {
     width: 0%;
   }
 
-  
   to {
     width: 100%;
     opacity: 1;
