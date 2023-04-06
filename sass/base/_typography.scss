@@ -1,3 +1,4 @@
+/**** Définition de la police ****/
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
@@ -63,7 +64,7 @@ body {
         font-size: 14px;
     }
 }
-
+//card
 .container_card {
     h2 {
         font-weight: 700;
@@ -75,16 +76,15 @@ body {
         font-size: 17px;
     }
 }
-
+//footer
 footer {
     h1 {
         font-weight: 400;
         font-size: 18px;
     }
-
 }
 
-//Restaurant//
+// Pages des restaurant//
 
 .menu_food {
     h1 {
@@ -117,12 +117,10 @@ footer {
         font-weight: 300;
         font-size: 15px;
         margin: 0;
-        
     }
 }
 
 .price {
-    
     p {
         font-weight: 700;
         font-size: 15px;
@@ -135,5 +133,4 @@ footer {
         overflow: hidden;
         white-space: nowrap;
     }
-    
 }

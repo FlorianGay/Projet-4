@@ -4,7 +4,7 @@ body {
     flex-direction: column;
 }
 
-/* Animation loader */
+/**** Animation loader ****/
 .body_contain {
     opacity: 0;
     animation: body_appear 0ms forwards;
@@ -44,7 +44,7 @@ body {
 .loader svg:nth-child(3) {
   animation-delay: 0;
 }
-
+// Apparition du loader
 @keyframes loader {
   0% {
     height: 128px;
@@ -58,7 +58,7 @@ body {
     height: 64px;
   }
 }
-
+// Disparition du loader
 @keyframes loader_disapear {
   0% {
     opacity: 1;
@@ -76,7 +76,7 @@ body {
     opacity: 0;
   }
 }
-
+// Apparition du body
 @keyframes body_appear {
   from {
     opacity: 0;
@@ -87,7 +87,7 @@ body {
   }
 }
 
-/*title et button*/
+/**** title & button ****/
 a {
     text-decoration: none;
     color: black;
@@ -106,7 +106,6 @@ a {
 .fonction {
     padding: 48px 20px 68px 20px;
     
-
     @include desktop-only{
         padding: 50px 180px;
     }
@@ -133,6 +132,7 @@ a {
                 border-radius: 20px;
                 padding: 20px 38px 20px 0;
                 background: #f6f6f6;
+                flex: 1;
 
                 a {
                     display: flex;
@@ -159,11 +159,9 @@ a {
             :hover {
                 background: #F5EDFF;
                 cursor: pointer;
-                i { color: $primary;}
-                
+                i { color: $primary;} 
             }
         }
-    
 }
 
 i {
@@ -172,6 +170,7 @@ i {
     color: #7E7E7E;
 }
 
+/**** Carte des restaurants ****/
 .restaurant {
     padding: 54px 17px 64px 17px;
     background: #f2f2f2;
@@ -199,7 +198,7 @@ i {
                 flex: 1;
             }
         }
-
+        // étiquette nouveau
         .new {
             position: absolute;
             right: 15px;
@@ -214,7 +213,7 @@ i {
 }
 
 .card {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     block-size: 100%;
     position: relative;
@@ -241,7 +240,7 @@ i {
         margin: 0;
     }
 }
-
+// coeur qui se remplit
 .heart-icon {
 
     .fa-regular {
@@ -266,7 +265,7 @@ i {
 }
 
 }
-
+// remplissage du coeur
 @keyframes filled-heart-in {
     0% {
         opacity: 0;
@@ -288,8 +287,8 @@ i {
         opacity: 1;
     }
   }
-
-  @keyframes filled-heart-out {
+//vidage du coeur
+@keyframes filled-heart-out {
     0% {
         opacity: 1;
     }

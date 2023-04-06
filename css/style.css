@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/**** Définition de la police ****/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 h1 {
@@ -117,7 +118,7 @@ footer h1 {
   padding: 13px 18.75px;
   border-radius: 25px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border: none;
 }
 .button:hover {
@@ -147,7 +148,7 @@ header .__btn:hover {
   }
 }
 
-/*En-tête*/
+/**** En-tête ****/
 header .header_logo {
   display: flex;
   width: 100%;
@@ -179,7 +180,7 @@ header .header_location i {
   color: black;
 }
 
-/* en-tête pages restaurant*/
+/**** en-tête pages restaurant ****/
 .head {
   display: flex;
   align-items: center;
@@ -255,7 +256,7 @@ body {
   flex-direction: column;
 }
 
-/* Animation loader */
+/**** Animation loader ****/
 .body_contain {
   opacity: 0;
   animation: body_appear 0ms forwards;
@@ -328,7 +329,7 @@ body {
     opacity: 1;
   }
 }
-/*title et button*/
+/**** title & button ****/
 a {
   text-decoration: none;
   color: black;
@@ -375,6 +376,7 @@ a:hover {
   border-radius: 20px;
   padding: 20px 38px 20px 0;
   background: #f6f6f6;
+  flex: 1;
 }
 .fonction ul li a {
   display: flex;
@@ -408,6 +410,7 @@ i {
   color: #7E7E7E;
 }
 
+/**** Carte des restaurants ****/
 .restaurant {
   padding: 54px 17px 64px 17px;
   background: #f2f2f2;
@@ -450,7 +453,7 @@ i {
 }
 
 .card {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   block-size: 100%;
   position: relative;

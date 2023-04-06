@@ -1,9 +1,10 @@
+// responsive écran >= 1024px
 @mixin desktop-only {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
     }
 }
-
+// responsive écran >= 768px
 @mixin tablet-only {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;

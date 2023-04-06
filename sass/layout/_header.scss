@@ -1,4 +1,4 @@
-/*En-tête*/
+/**** En-tête ****/
 
 header {
 
@@ -28,7 +28,7 @@ header {
         width: 100%;
         justify-content: center;
 
-        & i{
+        & i {
             width: 12px;
             height: 16px;
             color: black;
@@ -36,9 +36,7 @@ header {
     }
 }
 
-
-
-/* en-tête pages restaurant*/
+/**** en-tête pages restaurant ****/
 
 .head {
     display: flex;
