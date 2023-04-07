@@ -79,9 +79,11 @@ a {
         border-radius: 15px;
         display: flex;
         overflow: hidden;
+        
 
         &:hover {
             cursor: pointer;
+
             // animation d'apparition de l'option check
             .check {
               width: 15%;
@@ -91,7 +93,7 @@ a {
                 transform: rotate(360deg);
                 margin-left: 0;
               }
-              }        
+              }
           }
           // bloc de l'option check
           .check {
@@ -103,6 +105,7 @@ a {
             justify-content: center;
             align-items: center;
             transition: all 500ms;
+
     
             i {
               margin-left: 20px;
@@ -116,11 +119,11 @@ a {
             }
 
         .container__card {
-            width: 100%;
             display: flex;
-            justify-content: space-between;
             padding: 12.03px 0;
             align-items: flex-end;
+            flex: 1;
+            width: 85%;
         }
     }
 
@@ -128,6 +131,7 @@ a {
         flex: 1;
         max-width: 80%;
         padding-left: 15px;
+
     }
 
     .price {
@@ -135,6 +139,9 @@ a {
       justify-content: flex-end;
       align-items: flex-end;
       padding-right: 15px;
+
+      flex: 1;
+
     }
 }
 // apparition des différents plats par section : entrées, plats et desserts

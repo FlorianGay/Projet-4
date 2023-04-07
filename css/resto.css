@@ -362,11 +362,11 @@ a {
   transition: all 500ms;
 }
 .menu_card .card .container__card {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   padding: 12.03px 0;
   align-items: flex-end;
+  flex: 1;
+  width: 85%;
 }
 .menu_card .plate {
   flex: 1;
@@ -378,6 +378,7 @@ a {
   justify-content: flex-end;
   align-items: flex-end;
   padding-right: 15px;
+  flex: 1;
 }
 
 @keyframes appear {
