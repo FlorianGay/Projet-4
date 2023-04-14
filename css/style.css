@@ -124,6 +124,7 @@ footer h1 {
 .button:hover {
   cursor: pointer;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 .button.resto_btn {
   align-self: center;
@@ -491,9 +492,15 @@ i {
   color: transparent;
   background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
-.heart-icon .fa-solid:hover {
+.heart-icon .fa-solid:active {
   animation: filled-heart-in 500ms ease-in-out forwards;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .heart-icon .fa-solid:hover {
+    animation: filled-heart-in 500ms ease-in-out forwards;
+    cursor: pointer;
+  }
 }
 
 @keyframes filled-heart-in {
